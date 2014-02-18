@@ -71,3 +71,7 @@ let g:clang_complete_copen=1                    " Show clang errors in the quick
 nnoremap <Leader>snc   :e $VIMHOME/bundle/vim-snippets/snippets/c.snippets<CR>
 nnoremap <Leader>sncpp :e $VIMHOME/bundle/vim-snippets/snippets/cpp.snippets<CR>
 nnoremap <Leader>snt   :e $VIMHOME/bundle/vim-snippets/snippets/tex.snippets<CR>
+
+" For abc-zz
+au BufNewFile,BufRead *.ihh set filetype=cpp
+au BufNewFile,BufRead *.icc set filetype=cpp
