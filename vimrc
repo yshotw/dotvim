@@ -45,7 +45,7 @@ nnoremap <Leader>v :e $VIMHOME/vimrc<CR>
 
 " For vim-latex
 let g:tex_flavor='latex'
-au  BufNewFile,BufRead,BufEnter *.tex setlocal spell spelllang=en_us
+au  BufNewFile,BufRead,BufEnter *.tex setlocal wm=2 tw=80 spell spelllang=en_us
 
 " For pathogen
 execute pathogen#infect()
@@ -77,4 +77,4 @@ au BufNewFile,BufRead *.ihh set filetype=cpp
 au BufNewFile,BufRead *.icc set filetype=cpp
 
 " For text files
-au BufRead,BufNewFile *.txt set wm=2 tw=80      " Auto wrap texts
+au BufNewFile,BufRead *.txt setlocal wm=2 tw=80 spell spelllang=en_us
