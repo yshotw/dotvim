@@ -75,3 +75,6 @@ nnoremap <Leader>snt   :e $VIMHOME/bundle/vim-snippets/snippets/tex.snippets<CR>
 " For abc-zz
 au BufNewFile,BufRead *.ihh set filetype=cpp
 au BufNewFile,BufRead *.icc set filetype=cpp
+
+" For text files
+au BufRead,BufNewFile *.txt set wm=2 tw=80      " Auto wrap texts
